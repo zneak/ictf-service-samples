@@ -9,7 +9,7 @@ service:
 
 bundle: service
 	mkdir -p service/rw
-	rm scripts/*.pyc
+	rm -f scripts/*.pyc
 	rm -f ../$(SERVICE).tgz
 	tar caf ../$(SERVICE).tgz *
 	@echo "#### Double check ../$(SERVICE).tgz and submit it :) ####"
